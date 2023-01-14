@@ -1,30 +1,62 @@
 # airdrop-contract-example
 
-### Requirement:
+## Getting Start
 
-Add a file in root folder.
+This repository is a example of airdrop event contract. It helps you to launch an airdrop event with few parameters needed which are described below.
 
-1. Create .private-keys and input deployer's private key
-2. Rename .env.template to .env file and fill up params
+- operator: the contract operator who have the access to add allow list in contract's storage
+- startTime: the epoch time (in ms) when the event should start
+- endTime: the epoch time (in ms) when the event should end
+- eventAmount: the amount (in ether) which users in allow list could claim
 
-### Scripts:
+### Prerequisites (With nodejs v14)
 
-deploy:
+Before you start using the airdrop event contract. You need to install yarn for helping you to get modules you need
+
+- yarn
+  ```sh
+  $ brew install yarn
+  ```
+
+If perform a test is needed, you will need to install ganache
+
+- ganache
+  ```
+  $ npm install ganache --global
+  ```
+
+### Installation
+
+After you have installed npm, do the following steps to setup the repo on your device
+
+1. Clone the repo
+
+   ```sh
+   git clone git@github.com:nlsh710599/airdrop-contract-example.git
+   ```
+
+2. Install NPM packages
+
+   ```sh
+   yarn
+   ```
+
+### Deploy to production environment
 
 ```bash
 $ yarn deploy-prod
 ```
 
-test:
+### Perform a test
 
-run ganache
+- run ganache
 
-```
-$ ganahe
-```
+  ```
+  $ ganahe
+  ```
 
-perform test
+- perform test
 
-```bash
-$ truffle test
-```
+  ```bash
+  $ truffle test
+  ```
