@@ -13,6 +13,7 @@
     "@openzeppelin/contracts-upgradeable": "^4.3.2",
     "@truffle/hdwallet-provider": "^1.2.0",
     "dotenv": "^16.0.0",
+    "ganache": "^7.7.3",
     "truffle": "^5.1.58"
   },
   "devDependencies": {
