@@ -22,7 +22,7 @@ If perform a test is needed, you will need to install ganache
 
 - ganache
   ```
-  $ npm install ganache --global
+  $ yarn add ganach
   ```
 
 ### Installation
