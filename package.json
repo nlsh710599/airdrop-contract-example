@@ -5,6 +5,9 @@
   "repository": "git@github.com:nlsh710599/airdrop-contract-example.git",
   "author": "chihyen <nlsh710599@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy-prod": "truffle compile --all && truffle migrate --f 1 --to 2 --reset --network production"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
     "@openzeppelin/contracts-upgradeable": "^4.3.2",

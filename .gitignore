@@ -2,3 +2,6 @@ node_modules
 airdrop-contract-address.json
 build
 .openzeppelin
+.env
+airdrop-contract-address-*
+.private-keys
